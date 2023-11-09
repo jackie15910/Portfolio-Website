@@ -14,15 +14,15 @@
       <nav>
         <h1 class="Jackie">Jackie</h1>
         <!-- <img> professional -->
-        <ul>
+        <ul id="sidemenu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Art</a></li>
           <li><a href="#">Contact</a></li>
-          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <p>Web Developer</p>
@@ -101,6 +101,17 @@
       <p>Copyright © Jackie. Made with <i class="fas fa-heart"></i> HTML and CSS</p>
     </div>
   </div>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0"
+  }
+  function openmenu(){
+    sidemenu.style.right = "-200"
+  }
+</script>
 
 </body>
 </html>
