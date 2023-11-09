@@ -15,11 +15,11 @@
         <h1 class="Jackie">Jackie</h1>
         <!-- <img> professional -->
         <ul id="sidemenu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Art</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#art">Art</a></li>
+          <li><a href="#contact">Contact</a></li>
           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -53,7 +53,7 @@
         <img src="images/work-1.png" alt="Pokepedia">
         <div class="layer">
           <h3>Pokepedia Resource</h3>
-          <p>The app allows you to use an advanced search and catalogue, to find and manage Pokémon featured in the Pokémon game and examine their information.</p>
+          <p>Inspired by the Pokedex, the app allows you to use an advanced search and catalogue, to find and manage Pokémon featured in the game and examine their information.</p>
           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
@@ -68,6 +68,62 @@
       <!-- <div class="work">
         <img src="images/work-3.png" alt="">
       </div> -->
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<div id="art">
+  <div class="container">
+    <h1 class="sub-title">My Art</h1>
+    <div class="art-list">
+      <div class="art">
+        <img src="images/LuciferSolus.png" alt="Art1">
+        <div class="layer">
+          <h3>Lucifer Solus</h3>
+          <p>My Dungeons and Dragons character. An amnesiac High Elf from Korinn Archipelago. After fighting with and corrupted by a demon, he found hope being blessed by a powerful Celestial. Learning to harness demonic and celestial powers, he travels to hunt the demon that tried to break him.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="art">
+        <img src="images/Shaikh.png" alt="Art2">
+        <div class="layer">
+          <h3>Shaikh</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iste et deleniti eum, repellat tenetur. Consequuntur architecto, odio, incidunt aliquid obcaecati magnam eius exercitationem voluptatibus quis accusantium quibusdam optio consectetur.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="art">
+        <img src="images/Pog.png" alt="Art3">
+        <div class="layer">
+        <h3>Pog</h3>
+        <p>A gluttonous Gnome who's lower half was paralyzed from spinal damage after a tree mysteriously fell on him. Exercising and gaining strength, he became a guard, for his home village Gnomengard, and helps work the mushroom farms.</p>
+      </div>
+    </div>
+      <div class="art">
+        <img src="images/CyberpunkCity.png" alt="Art4">
+        <div class="layer">
+        <h3>Cyberpunk City</h3>
+        <p>Inspired by one of my favorite games Cyberpunk 2077, a beautiful futuristic multicultural city, yet overrun with crime and corruption.</p>
+        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      </div>
+      <div class="art">
+        <img src="images/KrokTikkle.png" alt="Art5">
+        <div class="layer">
+        <h3>Krok Tikkle</h3>
+        <p>A primal Lizardman from the Mere of Dead Men. He earned his skull pauldron after hunting a massive dangerous crocodile</p>
+        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      </div>
+      <div class="art">
+        <img src="images/Eomer.png" alt="Art6">
+        <div class="layer">
+        <h3>Eomer</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nobis temporibus totam adipisci animi suscipit cumque exercitationem vitae modi in molestias error, ex, ipsa quia mollitia, corporis perferendis minus! Odit..</p>
+        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      </div>
     </div>
     <a href="#" class="btn">See more</a>
   </div>
@@ -98,7 +154,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>Copyright © Jackie. Made with <i class="fas fa-heart"></i> HTML and CSS</p>
+      <p>Copyright © Jackie. Made with <i class="fas fa-heart"></i> with HTML and CSS</p>
     </div>
   </div>
 
@@ -108,8 +164,8 @@
   function openmenu(){
     sidemenu.style.right = "0"
   }
-  function openmenu(){
-    sidemenu.style.right = "-200"
+  function closemenu(){
+    sidemenu.style.right = "-200px"
   }
 </script>
 
