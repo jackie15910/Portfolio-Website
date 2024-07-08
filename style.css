@@ -23,6 +23,31 @@ body{
   padding: 10px 5%;
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
+.scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  opacity: 60%;
+  bottom: 10%;
+  right: 10%;
+  padding: 10px 20px;
+  background-color: #ff0040;
+  width: 130px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-to-top-btn.show {
+  display: block !important;
+}
+
 nav{
   display: flex;
   align-items: center;
@@ -309,6 +334,15 @@ nav.fas{
 }
 
 @media only screen and (max-width: 600px){
+  .hamburgerMenu {
+    display: block;
+    font-size: 40px;
+    z-index: 100;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
   #header{
     background-image: url(); 
   }
@@ -331,13 +365,16 @@ nav.fas{
     position: fixed;
     top: 0;
     right: -200px;
-    width: 200px;
+    width: 150px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
   }
-  nav ul li{
+  nav ul.open {
+    right: 0;
+  }
+  nav ul li {
     display: block;
     margin: 25px;
   }
@@ -365,3 +402,4 @@ nav.fas{
     font-size: 14px;
   }
 }
+

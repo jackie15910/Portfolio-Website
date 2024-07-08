@@ -8,21 +8,17 @@
   <script src="https://kit.fontawesome.com/03e2c781ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <div id="header">
     <div class="container">
       <nav>
         <h1 class="Jackie">Jackie</h1>
-        <!-- <img> professional -->
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
+        <div class="hamburgerMenu" id="hamburgerMenu">&#9776;</div>
+        <ul id="sideMenu">
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#art">Art</a></li>
           <li><a href="#contact">Contact</a></li>
-          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <p>Web Developer</p>
@@ -30,6 +26,7 @@
       </div>
     </div>
   </div>
+
 
   <div id="about">
     <div class="container">
@@ -39,7 +36,7 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>Born in Toronto Canada, I grew up in the GTA, moving from Milton to Oakville and now Mississauga, I've helped with the salon familiy business before aspiring to be a great web developer and programmer.</p>
+          <p>Born in Toronto Canada, I grew up in the GTA, moving from Milton to Oakville and now Mississauga, I've helped with the salon familiy business before aspiring to be a great full stack developer and programmer.</p>
         </div>
       </div>
     </div>
@@ -158,17 +155,7 @@
     </div>
   </div>
 </div>
-
-<script>
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-    sidemenu.style.right = "0"
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px"
-  }
-</script>
-
+<button id="scrollToTopBtn" class="scroll-to-top-btn" style="display: none;">Back to Top</button>
+<script src="scripts.js"></script>
 </body>
 </html>
