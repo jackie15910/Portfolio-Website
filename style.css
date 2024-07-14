@@ -267,19 +267,31 @@ nav ul li a:hover::after{
 
 .btn{
   display: block;
-  /* margin: 50px auto; */
   margin: 2rem auto;
   width: fit-content;
-  border: 1px solid #ff0040;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
   color: white;
-  transition: background 0.5s;
 }
 
 .btn:hover{
   background: #ff0040;
+}
+
+.submit{
+  display: block;
+  width: fit-content;
+  border: 1px solid #ff0040;
+  margin: 8px 0 8px 0;
+  padding: 14px 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background: #ff0040;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .contact-left{
@@ -366,6 +378,12 @@ form .btn2{
 
 nav.fas{
   display: none;
+}
+
+#successMsg{
+  color: #ff0040;
+  display: block;
+  padding-left: 2rem;
 }
 
 @media only screen and (max-width: 600px){
