@@ -32,7 +32,7 @@ body{
   position: fixed;
   opacity: 60%;
   bottom: 10%;
-  right: 50%;
+  right: 30%;
   padding: 10px 20px;
   background-color: #ff0040;
   width: 130px;
@@ -446,6 +446,8 @@ nav.fas{
     top: 25px;
     left: 25px;
   }
+  .scroll-to-top-btn {
+    right: 50%;
   .sub-title{
     font-size: 40px;
   }
