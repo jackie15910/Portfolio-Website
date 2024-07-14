@@ -274,6 +274,7 @@ nav ul li a:hover::after{
   border-radius: 6px;
   text-decoration: none;
   color: white;
+  transition: background 0.5s;
 }
 
 .btn:hover{
@@ -284,15 +285,19 @@ nav ul li a:hover::after{
   display: block;
   width: fit-content;
   border: 1px solid #ff0040;
-  margin: 8px 0 8px 0;
-  padding: 14px 40px;
   border-radius: 6px;
   text-decoration: none;
+  margin: 8px 0 8px 0;
+  padding: 14px 40px;
   color: white;
-  display: inline-block;
-  background: #ff0040;
   font-weight: bold;
+  background: transparent;
   font-size: 15px;
+  transition: background 0.5s;
+}
+
+.submit:hover{
+  background: #ff0040;
 }
 
 .contact-left{
