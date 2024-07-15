@@ -122,10 +122,18 @@ nav ul li a:hover::after{
   padding: 80px 0;
   color: #ababab;
 }
-.row{
+
+.about-container{
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.journey{
+  display: flex;
+}
+
+.journeySmall{
+  display: none;
 }
 
 .about-col-1{
@@ -396,7 +404,15 @@ nav.fas{
   #sideMenu{
     margin-right: 0;
   }
-
+  .about-container{
+    flex-direction: column;
+  }
+  .journey{
+    display: none;
+  }
+  .journeySmall{
+    display: block;
+  }
   .hamburgerMenu {
     display: block;
     font-size: 40px;
@@ -466,5 +482,5 @@ nav.fas{
   .copyright{
     font-size: 14px;
   }
+  }
 }
-
